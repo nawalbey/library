@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style1.css">
+    <link rel="stylesheet" href="./css/style1.css">
+
     <title>Document</title>
 </head>
 
@@ -12,7 +13,8 @@
     <?php include_once "./inc/nav.php"; ?>
 
     <div class="container">
-        <form action="model./security.php" method="post" enctype="multipart/form-data">
+        <h1 class="titre">bienvenu sur batman</h1>
+        <form action="./model/security.php" method="post" enctype="multipart/form-data">
             <div>
                 <input type="email" name="email" placeholder="Votre email">
 
@@ -21,7 +23,7 @@
                 </div>
 
                 <div>
-                    <button name="valider">Inscription</button>
+                    <button name="valider">connexion</button>
                 </div>
         </form>
     </div>

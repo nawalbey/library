@@ -4,7 +4,7 @@ function dbConnexion()
 {
     $connexion = null;
     $host = 'localhost';
-    $dbName = "library";
+    $dbName = "biblio";
     $identify = "root";
     $password = "";
     try {
@@ -15,7 +15,5 @@ function dbConnexion()
 
     return $connexion;
 }
-
-define("RACINE_SITE", "/library/");
 
 require_once('../inc/function.php');

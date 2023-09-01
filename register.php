@@ -7,7 +7,10 @@ require_once('./inc/header.php');
             <input type="email" name="email" placeholder="Votre email">
         </div>
         <div>
-            <input type="text" name="pseudo" placeholder="Votre pseudo">
+            <input type="text" name="nom" placeholder="Votre nom">
+        </div>
+        <div>
+            <input type="text" name="prenom" placeholder="Votre prenom">
         </div>
 
         <div>
@@ -28,7 +31,7 @@ require_once('./inc/header.php');
 
         <div class="field">
             <label for="sexe">Civilité</label><br>
-            <select name="pets" id="pet-select">
+            <select name="civility" id="pet-select">
                 <option value="dog">sexe</option>
                 <option value="cat">femme</option>
                 <option value="homme">homme</option>
@@ -46,17 +49,17 @@ require_once('./inc/header.php');
                 <legend>Select votre pays</legend>
 
                 <div>
-                    <input type="radio" id="france" name="drone" value="france" checked />
+                    <input type="radio" id="france" name="pays" value="france" checked />
                     <label for="france">france</label>
                 </div>
 
                 <div>
-                    <input type="radio" id="allemagne" name="drone" value="allemagne" />
+                    <input type="radio" id="allemagne" name="pays" value="allemagne" />
                     <label for="allemagne">allemagne</label>
                 </div>
 
                 <div>
-                    <input type="radio" id="italie" name="drone" value="italie" />
+                    <input type="radio" id="italie" name="pays" value="italie" />
                     <label for="italie">italie</label>
                 </div>
             </fieldset>
@@ -65,10 +68,6 @@ require_once('./inc/header.php');
             <label for="lastName">last name&nbsp;:</label><br>
             <input type="text" id="lastName" name="user_lastName" />
         </div>
-        <div class="field">
-            <label for="email">E-mail&nbsp;:</label><br>
-            <input type="email">
-        </div>
 
         <div class="field">
 
@@ -76,24 +75,19 @@ require_once('./inc/header.php');
                 <legend>veuillez accepte les conditions</legend>
 
                 <div class="field">
-                    <input type="checkbox" id="oui" name="oui" checked />
-                    <label for="oui">oui</label>
+                    <input type="checkbox" id="oui" name="conditions" />
                 </div>
 
-                <div class="field">
-                    <input type="checkbox" id="non" name="non" />
-                    <label for="non">non</label>
-                </div>
             </fieldset>
         </div>
 
         <div class="field">
             <label for="submit">date de naissance :</label><br>
-            <input type="date" id="start" name="trip-start" value="1989-09-04" min="2023-09-04" max="2023-09-04" />
+            <input type="date" id="start" name="birthday" value="1989-09-04" min="2023-09-04" max="2023-09-04" />
         </div>
         <div class="field">
             <div> <label for="story">message</label></div>
-            <textarea id="story" name="story" rows="5" cols="33">
+            <textarea id="story" name="message" rows="5" cols="33">
                 </textarea>
         </div>
         <div class="field">
@@ -107,7 +101,7 @@ require_once('./inc/header.php');
 
         <div class="test">
 
-            <input type="submit" class="submit">
+            <input type="submit" class="submit" name="submit">
         </div>
 
 
